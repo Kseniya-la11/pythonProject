@@ -1,5 +1,5 @@
 per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
-money = int(input("Введите сумму:"))
+money = int(input("Введите сумму:"))/100
 float_percent = list(per_cent.values())
 #находим сумму по каждому отдельному банку
 dep_osit = [money * i for i in float_percent]
